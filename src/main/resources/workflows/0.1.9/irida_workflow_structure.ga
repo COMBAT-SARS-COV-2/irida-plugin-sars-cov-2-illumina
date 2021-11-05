@@ -900,7 +900,7 @@
     "class" : "Organization",
     "name" : "South African National Bioinformatics Institute"
   } ],
-  "name" : "imported: COVID 19: Amplicon-ARTIC - single pair 0.1.8",
+  "name" : "imported: COVID 19: Amplicon-ARTIC - single pair 0.1.9",
   "uuid" : "f33ff55a-72b2-411f-b92f-a427ce492b3c",
   "format-version" : "0.1",
   "version" : 5,

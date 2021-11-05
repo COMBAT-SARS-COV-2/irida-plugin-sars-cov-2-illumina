@@ -2,7 +2,7 @@
 <iridaWorkflow>
   <id>fe8bfdc1-bf00-49e0-bfbd-7c0f9f0c926e</id>
   <name>Artic_Illumina</name>
-  <version>0.1.8</version>
+  <version>0.1.9</version>
   <analysisType>ARTICILLUMINA_PIPELINE</analysisType>
   <inputs>
     <sequenceReadsPaired>sequence_reads_list_paired</sequenceReadsPaired>
