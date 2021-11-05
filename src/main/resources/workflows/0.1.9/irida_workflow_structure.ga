@@ -1,11 +1,14 @@
 {
-  "license" : "MIT",
+  "a_galaxy_workflow" : "true",
+  "annotation" : "Workflow for generating SARS-Cov2 consensus and variants from viral amplicon data. Us\nes iVar toolsuite.",
+  "format-version" : "0.1",
+  "name" : "imported: COVID 19: Amplicon-ARTIC - single pair 0.1.9 (imported from uploaded file)",
   "steps" : {
     "9" : {
       "workflow_outputs" : [ {
         "label" : null,
         "output_name" : "output_variants_tabular",
-        "uuid" : "6ff985d6-e66b-47cf-9e69-0783067ffc2c"
+        "uuid" : "a01cd399-54ae-4a2e-8e8e-bc32d212bc08"
       } ],
       "input_connections" : {
         "input_bam" : {
@@ -22,14 +25,14 @@
       "tool_state" : "{\"input_bam\": {\"__class__\": \"ConnectedValue\"}, \"min_freq\": \"0.8\", \"min_qual\": \"20\", \"output_format\": {\"choice\": \"tabular_and_vcf\", \"__current_case__\": 1, \"pass_only\": \"false\"}, \"ref\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 480.91668701171875,
-        "height" : 215.20001220703125,
-        "left" : 1354,
-        "right" : 1554,
-        "top" : 265.7166748046875,
+        "bottom" : 181.5833282470703,
+        "height" : 215.1999969482422,
+        "left" : 1683.5166015625,
+        "right" : 1883.5166015625,
+        "top" : -33.616668701171875,
         "width" : 200,
-        "x" : 1354,
-        "y" : 265.7166748046875
+        "x" : 1683.5166015625,
+        "y" : -33.616668701171875
       },
       "name" : "ivar variants",
       "uuid" : "49c2523d-168a-4040-8112-9037689c1ce0",
@@ -41,7 +44,7 @@
         "type" : "vcf"
       } ],
       "tool_shed_repository" : {
-        "changeset_revision" : "aea7008fe1f1",
+        "changeset_revision" : "3888bbe7a9ca",
         "name" : "ivar_variants",
         "owner" : "iuc",
         "tool_shed" : "toolshed.g2.bx.psu.edu"
@@ -64,11 +67,7 @@
       "workflow_outputs" : [ {
         "label" : null,
         "output_name" : "html_report",
-        "uuid" : "5266c50a-af33-4a78-87a4-f799a507185e"
-      }, {
-        "label" : null,
-        "output_name" : "plots",
-        "uuid" : "cc17cf0f-7afd-4b65-84f4-c3862eb18ff5"
+        "uuid" : "333b358e-83a8-4585-b462-a2d80a8813b8"
       } ],
       "input_connections" : {
         "results_0|software_cond|input" : {
@@ -81,14 +80,14 @@
       "tool_state" : "{\"comment\": \"\", \"export\": \"false\", \"flat\": \"false\", \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"fastp\", \"__current_case__\": 7, \"input\": {\"__class__\": \"ConnectedValue\"}}}], \"saveLog\": \"false\", \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 562.1166839599609,
+        "bottom" : 262.78334045410156,
         "height" : 164.40000915527344,
-        "left" : 221,
-        "right" : 421,
-        "top" : 397.7166748046875,
+        "left" : 550.5166625976562,
+        "right" : 750.5166625976562,
+        "top" : 98.38333129882812,
         "width" : 200,
-        "x" : 221,
-        "y" : 397.7166748046875
+        "x" : 550.5166625976562,
+        "y" : 98.38333129882812
       },
       "name" : "MultiQC",
       "uuid" : "fa4fa560-0177-4df6-8975-28da89ec42d3",
@@ -133,34 +132,40 @@
       },
       "label" : null,
       "id" : 4,
-      "tool_state" : "{\"analysis_type\": {\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}, \"fastq_input\": {\"fastq_input_selector\": \"paired_collection\", \"__current_case__\": 2, \"fastq_input1\": {\"__class__\": \"ConnectedValue\"}, \"iset_stats\": \"\"}, \"reference_source\": {\"reference_source_selector\": \"history\", \"__current_case__\": 1, \"ref_file\": {\"__class__\": \"ConnectedValue\"}, \"index_a\": \"auto\"}, \"rg\": {\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+      "tool_state" : "{\"analysis_type\": {\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}, \"fastq_input\": {\"fastq_input_selector\": \"paired_collection\", \"__current_case__\": 2, \"fastq_input1\": {\"__class__\": \"RuntimeValue\"}, \"iset_stats\": \"\"}, \"output_sort\": \"coordinate\", \"reference_source\": {\"reference_source_selector\": \"history\", \"__current_case__\": 1, \"ref_file\": {\"__class__\": \"RuntimeValue\"}, \"index_a\": \"auto\"}, \"rg\": {\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 855.9166870117188,
-        "height" : 205.20001220703125,
-        "left" : 227,
-        "right" : 427,
-        "top" : 650.7166748046875,
+        "bottom" : 597.3833312988281,
+        "height" : 246,
+        "left" : 556.5166625976562,
+        "right" : 756.5166625976562,
+        "top" : 351.3833312988281,
         "width" : 200,
-        "x" : 227,
-        "y" : 650.7166748046875
+        "x" : 556.5166625976562,
+        "y" : 351.3833312988281
       },
       "name" : "Map with BWA-MEM",
-      "uuid" : "f37ed334-6985-43e1-9bd5-46e1a8c512bc",
+      "uuid" : "958835cd-80eb-4c60-8a4e-a91766cd83b0",
       "outputs" : [ {
         "name" : "bam_output",
         "type" : "bam"
       } ],
       "tool_shed_repository" : {
-        "changeset_revision" : "3fe632431b68",
+        "changeset_revision" : "64f11cf59c6e",
         "name" : "bwa",
         "owner" : "devteam",
         "tool_shed" : "toolshed.g2.bx.psu.edu"
       },
       "type" : "tool",
-      "tool_version" : "0.7.17.1",
+      "tool_version" : "0.7.17.2",
       "annotation" : "",
-      "inputs" : [ ],
+      "inputs" : [ {
+        "description" : "runtime parameter for tool Map with BWA-MEM",
+        "name" : "fastq_input"
+      }, {
+        "description" : "runtime parameter for tool Map with BWA-MEM",
+        "name" : "reference_source"
+      } ],
       "post_job_actions" : {
         "HideDatasetActionbam_output" : {
           "action_arguments" : { },
@@ -168,14 +173,14 @@
           "output_name" : "bam_output"
         }
       },
-      "content_id" : "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
-      "tool_id" : "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1"
+      "content_id" : "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
+      "tool_id" : "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2"
     },
     "8" : {
       "workflow_outputs" : [ {
         "label" : "Raw data for QualiMap BamQC on input dataset(s)",
         "output_name" : "raw_data",
-        "uuid" : "29101ccd-43de-4624-b910-86996a962fdd"
+        "uuid" : "7e386b8c-b51c-4b5c-90d0-d1d1d0eb3642"
       } ],
       "input_connections" : {
         "input1" : {
@@ -188,14 +193,14 @@
       "tool_state" : "{\"duplicate_skipping\": \"0\", \"input1\": {\"__class__\": \"ConnectedValue\"}, \"per_base_coverage\": \"false\", \"plot_specific\": {\"n_bins\": \"400\", \"paint_chromosome_limits\": \"true\", \"genome_gc_distr\": null, \"homopolymer_size\": \"3\"}, \"stats_regions\": {\"region_select\": \"all\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 774.9166870117188,
-        "height" : 205.20001220703125,
-        "left" : 1085,
-        "right" : 1285,
-        "top" : 569.7166748046875,
+        "bottom" : 475.5833282470703,
+        "height" : 205.1999969482422,
+        "left" : 1414.5166015625,
+        "right" : 1614.5166015625,
+        "top" : 270.3833312988281,
         "width" : 200,
-        "x" : 1085,
-        "y" : 569.7166748046875
+        "x" : 1414.5166015625,
+        "y" : 270.3833312988281
       },
       "name" : "QualiMap BamQC",
       "uuid" : "58a57b78-24f4-4561-90a1-b40261fb0a80",
@@ -230,7 +235,7 @@
       "workflow_outputs" : [ {
         "label" : null,
         "output_name" : "output1",
-        "uuid" : "db3ae1db-e4b8-44e1-bf4d-6e7768c4067a"
+        "uuid" : "e3eb0357-392b-49e9-8a42-9fbb4fea995c"
       } ],
       "input_connections" : {
         "input1" : {
@@ -240,34 +245,37 @@
       },
       "label" : null,
       "id" : 14,
-      "tool_state" : "{\"alignment\": \"false\", \"db\": {\"source\": \"default\", \"__current_case__\": 2}, \"include_header\": \"true\", \"input1\": {\"__class__\": \"ConnectedValue\"}, \"max_ambig\": \"0.5\", \"min_length\": \"10000\", \"usher\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+      "tool_state" : "{\"alignment\": \"false\", \"db\": {\"source\": \"default\", \"__current_case__\": 2}, \"include_header\": \"true\", \"input1\": {\"__class__\": \"RuntimeValue\"}, \"max_ambig\": \"0.5\", \"min_length\": \"10000\", \"usher\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 534.3166809082031,
+        "bottom" : 234.98333740234375,
         "height" : 113.60000610351562,
-        "left" : 1946,
-        "right" : 2146,
-        "top" : 420.7166748046875,
+        "left" : 2275.5166015625,
+        "right" : 2475.5166015625,
+        "top" : 121.38333129882812,
         "width" : 200,
-        "x" : 1946,
-        "y" : 420.7166748046875
+        "x" : 2275.5166015625,
+        "y" : 121.38333129882812
       },
       "name" : "Pangolin",
-      "uuid" : "d29ce24e-a835-477e-8b30-d116af79d0d0",
+      "uuid" : "a73c471c-aac8-47d4-9d28-ab0a50154c94",
       "outputs" : [ {
         "name" : "output1",
         "type" : "tabular"
       } ],
       "tool_shed_repository" : {
-        "changeset_revision" : "3a656a4a43ed",
+        "changeset_revision" : "debfccc4d65b",
         "name" : "pangolin",
         "owner" : "iuc",
         "tool_shed" : "toolshed.g2.bx.psu.edu"
       },
       "type" : "tool",
-      "tool_version" : "3.1.11+galaxy0",
+      "tool_version" : "3.1.16+galaxy0",
       "annotation" : "",
-      "inputs" : [ ],
+      "inputs" : [ {
+        "description" : "runtime parameter for tool Pangolin",
+        "name" : "input1"
+      } ],
       "post_job_actions" : {
         "RenameDatasetActionoutput1" : {
           "action_arguments" : {
@@ -277,14 +285,14 @@
           "output_name" : "output1"
         }
       },
-      "content_id" : "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/3.1.11+galaxy0",
-      "tool_id" : "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/3.1.11+galaxy0"
+      "content_id" : "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/3.1.16+galaxy0",
+      "tool_id" : "toolshed.g2.bx.psu.edu/repos/iuc/pangolin/pangolin/3.1.16+galaxy0"
     },
     "15" : {
       "workflow_outputs" : [ {
         "label" : null,
         "output_name" : "report_tsv",
-        "uuid" : "31cdd3fc-0ea5-4583-8b5d-bb291f0f65f8"
+        "uuid" : "7b7f09de-a953-4399-b869-f54402ddeeac"
       } ],
       "input_connections" : {
         "input_fasta" : {
@@ -297,14 +305,14 @@
       "tool_state" : "{\"adv\": {\"advanced_options\": \"no\", \"__current_case__\": 1}, \"include_header\": \"true\", \"input_fasta\": {\"__class__\": \"ConnectedValue\"}, \"outputs\": [\"report_tsv\"], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 794.1166839599609,
+        "bottom" : 494.78334045410156,
         "height" : 154.40000915527344,
-        "left" : 1943,
-        "right" : 2143,
-        "top" : 639.7166748046875,
+        "left" : 2272.5166015625,
+        "right" : 2472.5166015625,
+        "top" : 340.3833312988281,
         "width" : 200,
-        "x" : 1943,
-        "y" : 639.7166748046875
+        "x" : 2272.5166015625,
+        "y" : 340.3833312988281
       },
       "name" : "Nextclade",
       "uuid" : "a3d4c10a-556e-4fc1-8e41-de8230dd6ecc",
@@ -347,14 +355,14 @@
       "tool_state" : "{\"amplicons\": {\"filter_by\": \"\", \"__current_case__\": 2}, \"inc_primers\": \"true\", \"input_bam\": {\"__class__\": \"ConnectedValue\"}, \"min_len\": \"30\", \"min_qual\": \"20\", \"primer\": {\"source\": \"cached\", \"__current_case__\": 1, \"cached_bed\": \"SARS-CoV-2-ARTICv3\"}, \"primer_pos_wiggle\": \"0\", \"window_width\": \"4\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 554.7166748046875,
+        "bottom" : 255.38333129882812,
         "height" : 134,
-        "left" : 1088,
-        "right" : 1288,
-        "top" : 420.7166748046875,
+        "left" : 1417.5166015625,
+        "right" : 1617.5166015625,
+        "top" : 121.38333129882812,
         "width" : 200,
-        "x" : 1088,
-        "y" : 420.7166748046875
+        "x" : 1417.5166015625,
+        "y" : 121.38333129882812
       },
       "name" : "ivar trim",
       "uuid" : "3afb1ed0-ee37-4cce-905a-fbcb987f3c26",
@@ -373,11 +381,13 @@
       "annotation" : "",
       "inputs" : [ ],
       "post_job_actions" : {
-        "HideDatasetActionoutput_bam" : {
-          "action_arguments" : { },
-          "action_type" : "HideDatasetAction",
+        "RenameDatasetActionoutput" : {
+          "action_arguments" : {
+            "newname" : "trimmed_alignment.bam"
+          },
+          "action_type" : "RenameDatasetAction",
           "output_name" : "output_bam"
-        }
+        }        
       },
       "content_id" : "toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.3.1+galaxy2",
       "tool_id" : "toolshed.g2.bx.psu.edu/repos/iuc/ivar_trim/ivar_trim/1.3.1+galaxy2"
@@ -395,14 +405,14 @@
       "tool_state" : "{\"assume_sorted\": \"true\", \"barcode_tag\": \"\", \"comments\": [], \"duplicate_scoring_strategy\": \"SUM_OF_BASE_QUALITIES\", \"inputFile\": {\"__class__\": \"ConnectedValue\"}, \"optical_duplicate_pixel_distance\": \"100\", \"read_name_regex\": \"\", \"remove_duplicates\": \"false\", \"validation_stringency\": \"LENIENT\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 633.3166809082031,
+        "bottom" : 333.98333740234375,
         "height" : 225.60000610351562,
-        "left" : 513,
-        "right" : 713,
-        "top" : 407.7166748046875,
+        "left" : 842.5166625976562,
+        "right" : 1042.5166625976562,
+        "top" : 108.38333129882812,
         "width" : 200,
-        "x" : 513,
-        "y" : 407.7166748046875
+        "x" : 842.5166625976562,
+        "y" : 108.38333129882812
       },
       "name" : "MarkDuplicates",
       "uuid" : "14b85aff-4bab-4b9e-9b00-cc92f9b076b6",
@@ -441,12 +451,12 @@
     "12" : {
       "workflow_outputs" : [ {
         "label" : null,
-        "output_name" : "output1",
-        "uuid" : "0566dea1-3bb7-46cb-81e5-6620d73f4f9c"
+        "output_name" : "output2",
+        "uuid" : "28d91880-515e-41a9-aee3-c3815ef40667"
       }, {
         "label" : null,
-        "output_name" : "output2",
-        "uuid" : "90e2aa91-a3b2-4320-9e6d-3c699cbfbceb"
+        "output_name" : "output1",
+        "uuid" : "586dc86a-2f32-46dc-94f1-779c87716296"
       } ],
       "input_connections" : {
         "input_bam" : {
@@ -467,14 +477,14 @@
       "tool_state" : "{\"input_bam\": {\"__class__\": \"ConnectedValue\"}, \"input_cons_fasta\": {\"__class__\": \"ConnectedValue\"}, \"input_ref\": {\"__class__\": \"ConnectedValue\"}, \"qc_type_conditional\": {\"qc_type\": \"--illumina\", \"__current_case__\": 1}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 572.7166595458984,
+        "bottom" : 273.3833312988281,
         "height" : 378,
-        "left" : 1657,
-        "right" : 1857,
-        "top" : 194.71665954589844,
+        "left" : 1986.5166015625,
+        "right" : 2186.5166015625,
+        "top" : -104.61666870117188,
         "width" : 200,
-        "x" : 1657,
-        "y" : 194.71665954589844
+        "x" : 1986.5166015625,
+        "y" : -104.61666870117188
       },
       "name" : "Quality Control (COG-UK QC)",
       "uuid" : "f800a02e-8b0b-4371-b8b4-53b7961a76c7",
@@ -533,7 +543,7 @@
       "workflow_outputs" : [ {
         "label" : null,
         "output_name" : "output",
-        "uuid" : "81189fe6-33ce-4931-9301-053b60d5da93"
+        "uuid" : "737771fd-ddf6-453b-a1bb-a0a9c8ef250e"
       } ],
       "input_connections" : {
         "infile" : {
@@ -546,14 +556,14 @@
       "tool_state" : "{\"adv_opts\": {\"adv_opts_selector\": \"basic\", \"__current_case__\": 0}, \"code\": \"/^>/s/Consensus_(.*)_threshold_.*/\\\\1/\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 845.9166870117188,
-        "height" : 93.20001220703125,
-        "left" : 1657,
-        "right" : 1857,
-        "top" : 752.7166748046875,
+        "bottom" : 546.5833282470703,
+        "height" : 93.19999694824219,
+        "left" : 1986.5166015625,
+        "right" : 2186.5166015625,
+        "top" : 453.3833312988281,
         "width" : 200,
-        "x" : 1657,
-        "y" : 752.7166748046875
+        "x" : 1986.5166015625,
+        "y" : 453.3833312988281
       },
       "name" : "Text transformation",
       "uuid" : "e18c3cbb-d092-4c23-ae50-69e90f36ea67",
@@ -562,7 +572,7 @@
         "type" : "input"
       } ],
       "tool_shed_repository" : {
-        "changeset_revision" : "fb4ff3c42cd3",
+        "changeset_revision" : "9ff72e942410",
         "name" : "text_processing",
         "owner" : "bgruening",
         "tool_shed" : "toolshed.g2.bx.psu.edu"
@@ -574,7 +584,7 @@
       "post_job_actions" : {
         "RenameDatasetActionoutput" : {
           "action_arguments" : {
-            "newname" : "infile"
+            "newname" : "masked_genome.fasta"
           },
           "action_type" : "RenameDatasetAction",
           "output_name" : "output"
@@ -593,17 +603,17 @@
       },
       "label" : null,
       "id" : 6,
-      "tool_state" : "{\"addref_cond\": {\"addref_select\": \"no\", \"__current_case__\": 0}, \"input\": {\"__class__\": \"RuntimeValue\"}, \"mode\": {\"outtype\": \"selected_reads\", \"__current_case__\": 1, \"filter_config\": {\"cond_region\": {\"select_region\": \"no\", \"__current_case__\": 0}, \"cond_rg\": {\"select_rg\": \"no\", \"__current_case__\": 0}, \"quality\": \"20\", \"library\": \"\", \"cigarcons\": null, \"inclusive_filter\": [\"1\", \"2\"], \"exclusive_filter\": null, \"exclusive_filter_all\": null}, \"subsample_config\": {\"subsampling_mode\": {\"select_subsample\": \"fraction\", \"__current_case__\": 0, \"factor\": \"1.0\", \"seed\": null}}, \"output_options\": {\"reads_report_type\": \"retained\", \"__current_case__\": 0, \"complementary_output\": \"false\", \"adv_output\": {\"readtags\": [], \"collapsecigar\": \"false\"}, \"output_format\": {\"oformat\": \"bam\", \"__current_case__\": 2}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+      "tool_state" : "{\"addref_cond\": {\"addref_select\": \"no\", \"__current_case__\": 0}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mode\": {\"outtype\": \"selected_reads\", \"__current_case__\": 1, \"filter_config\": {\"cond_region\": {\"select_region\": \"no\", \"__current_case__\": 0}, \"cond_rg\": {\"select_rg\": \"no\", \"__current_case__\": 0}, \"quality\": \"20\", \"library\": \"\", \"cigarcons\": \"\", \"inclusive_filter\": [\"1\", \"2\"], \"exclusive_filter\": null, \"exclusive_filter_all\": null}, \"subsample_config\": {\"subsampling_mode\": {\"select_subsample\": \"fraction\", \"__current_case__\": 0, \"factor\": \"1.0\", \"seed\": \"\"}}, \"output_options\": {\"reads_report_type\": \"retained\", \"__current_case__\": 0, \"complementary_output\": \"false\", \"adv_output\": {\"readtags\": [], \"collapsecigar\": \"false\"}, \"output_format\": {\"oformat\": \"bam\", \"__current_case__\": 2}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 647.3999938964844,
+        "bottom" : 348.06666564941406,
         "height" : 154.39999389648438,
-        "left" : 774,
-        "right" : 974,
-        "top" : 493,
+        "left" : 1103.5166015625,
+        "right" : 1303.5166015625,
+        "top" : 193.6666717529297,
         "width" : 200,
-        "x" : 774,
-        "y" : 493
+        "x" : 1103.5166015625,
+        "y" : 193.6666717529297
       },
       "name" : "Samtools view",
       "uuid" : "622f67e3-3756-412d-b92f-80826e5ae9cc",
@@ -620,10 +630,7 @@
       "type" : "tool",
       "tool_version" : "1.9+galaxy3",
       "annotation" : "",
-      "inputs" : [ {
-        "description" : "runtime parameter for tool Samtools view",
-        "name" : "input"
-      } ],
+      "inputs" : [ ],
       "post_job_actions" : {
         "HideDatasetActionoutputsam" : {
           "action_arguments" : { },
@@ -635,21 +642,25 @@
       "tool_id" : "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.9+galaxy3"
     },
     "1" : {
-      "workflow_outputs" : [ ],
+      "workflow_outputs" : [ {
+        "label" : null,
+        "output_name" : "output",
+        "uuid" : "367f8134-d22a-4c0d-bc33-42d7e4562922"
+      } ],
       "input_connections" : { },
       "label" : "reference",
       "id" : 1,
       "tool_state" : "{\"optional\": false}",
       "errors" : null,
       "position" : {
-        "bottom" : 579.5166778564453,
+        "bottom" : 280.18333435058594,
         "height" : 61.80000305175781,
-        "left" : -345,
-        "right" : -145,
-        "top" : 517.7166748046875,
+        "left" : -15.48333740234375,
+        "right" : 184.51666259765625,
+        "top" : 218.38333129882812,
         "width" : 200,
-        "x" : -345,
-        "y" : 517.7166748046875
+        "x" : -15.48333740234375,
+        "y" : 218.38333129882812
       },
       "name" : "Input dataset",
       "uuid" : "4b73ca25-933d-49d0-9e82-de479bf807b0",
@@ -665,21 +676,25 @@
       "tool_id" : null
     },
     "0" : {
-      "workflow_outputs" : [ ],
+      "workflow_outputs" : [ {
+        "label" : null,
+        "output_name" : "output",
+        "uuid" : "d346be7f-b664-4e42-94e4-ebf45702b7c9"
+      } ],
       "input_connections" : { },
       "label" : "sequence_reads_list_paired",
       "id" : 0,
       "tool_state" : "{\"optional\": false, \"collection_type\": \"list:paired\"}",
       "errors" : null,
       "position" : {
-        "bottom" : 488.91668701171875,
-        "height" : 82.20001220703125,
-        "left" : -345,
-        "right" : -145,
-        "top" : 406.7166748046875,
+        "bottom" : 189.5833282470703,
+        "height" : 82.19999694824219,
+        "left" : -15.48333740234375,
+        "right" : 184.51666259765625,
+        "top" : 107.38333129882812,
         "width" : 200,
-        "x" : -345,
-        "y" : 406.7166748046875
+        "x" : -15.48333740234375,
+        "y" : 107.38333129882812
       },
       "name" : "Input dataset collection",
       "uuid" : "4d08263d-63fd-432d-ac13-72348fe63203",
@@ -698,11 +713,7 @@
       "workflow_outputs" : [ {
         "label" : null,
         "output_name" : "html_report",
-        "uuid" : "0199d673-c1d0-428a-970b-750ea51e56af"
-      }, {
-        "label" : null,
-        "output_name" : "plots",
-        "uuid" : "75d8846b-e7f5-4965-b5e6-74d2ac078fce"
+        "uuid" : "1febd09d-6bab-4a43-82e0-07491a85a16c"
       } ],
       "input_connections" : {
         "results_0|software_cond|input" : {
@@ -715,14 +726,14 @@
       "tool_state" : "{\"comment\": \"\", \"export\": \"false\", \"flat\": \"false\", \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"qualimap\", \"__current_case__\": 20, \"input\": {\"__class__\": \"ConnectedValue\"}}}], \"saveLog\": \"false\", \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 906.5166778564453,
+        "bottom" : 607.1833343505859,
         "height" : 184.8000030517578,
-        "left" : 1371,
-        "right" : 1571,
-        "top" : 721.7166748046875,
+        "left" : 1700.5166015625,
+        "right" : 1900.5166015625,
+        "top" : 422.3833312988281,
         "width" : 200,
-        "x" : 1371,
-        "y" : 721.7166748046875
+        "x" : 1700.5166015625,
+        "y" : 422.3833312988281
       },
       "name" : "MultiQC",
       "uuid" : "7bef6cf2-e18f-40c7-93d2-e6f277781309",
@@ -777,17 +788,17 @@
       },
       "label" : "fastp: Trimmed Illumina Reads",
       "id" : 2,
-      "tool_state" : "{\"filter_options\": {\"quality_filtering_options\": {\"disable_quality_filtering\": \"false\", \"qualified_quality_phred\": null, \"unqualified_percent_limit\": null, \"n_base_limit\": null}, \"length_filtering_options\": {\"disable_length_filtering\": \"false\", \"length_required\": null, \"length_limit\": null}, \"low_complexity_filter\": {\"enable_low_complexity_filter\": \"false\", \"complexity_threshold\": null}}, \"output_options\": {\"report_html\": \"true\", \"report_json\": \"true\"}, \"overrepresented_sequence_analysis\": {\"overrepresentation_analysis\": \"false\", \"overrepresentation_sampling\": null}, \"read_mod_options\": {\"polyg_tail_trimming\": {\"trimming_select\": \"\", \"__current_case__\": 1, \"poly_g_min_len\": null}, \"polyx_tail_trimming\": {\"polyx_trimming_select\": \"\", \"__current_case__\": 1}, \"umi_processing\": {\"umi\": \"false\", \"umi_loc\": \"\", \"umi_len\": null, \"umi_prefix\": \"\"}, \"cutting_by_quality_options\": {\"cut_by_quality5\": \"false\", \"cut_by_quality3\": \"false\", \"cut_window_size\": null, \"cut_mean_quality\": null}, \"base_correction_options\": {\"correction\": \"false\"}}, \"single_paired\": {\"single_paired_selector\": \"paired_collection\", \"__current_case__\": 2, \"paired_input\": {\"__class__\": \"ConnectedValue\"}, \"adapter_trimming_options\": {\"disable_adapter_trimming\": \"false\", \"adapter_sequence1\": \"\", \"adapter_sequence2\": \"\"}, \"global_trimming_options\": {\"trim_front1\": null, \"trim_tail1\": null, \"trim_front2\": null, \"trim_tail2\": null}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+      "tool_state" : "{\"filter_options\": {\"quality_filtering_options\": {\"disable_quality_filtering\": \"false\", \"qualified_quality_phred\": \"\", \"unqualified_percent_limit\": \"\", \"n_base_limit\": \"\"}, \"length_filtering_options\": {\"disable_length_filtering\": \"false\", \"length_required\": \"\", \"length_limit\": \"\"}, \"low_complexity_filter\": {\"enable_low_complexity_filter\": \"false\", \"complexity_threshold\": \"\"}}, \"output_options\": {\"report_html\": \"true\", \"report_json\": \"true\"}, \"overrepresented_sequence_analysis\": {\"overrepresentation_analysis\": \"false\", \"overrepresentation_sampling\": \"\"}, \"read_mod_options\": {\"polyg_tail_trimming\": {\"trimming_select\": \"\", \"__current_case__\": 1, \"poly_g_min_len\": \"\"}, \"polyx_tail_trimming\": {\"polyx_trimming_select\": \"\", \"__current_case__\": 1}, \"umi_processing\": {\"umi\": \"false\", \"umi_loc\": \"\", \"umi_len\": \"\", \"umi_prefix\": \"\"}, \"cutting_by_quality_options\": {\"cut_by_quality5\": \"false\", \"cut_by_quality3\": \"false\", \"cut_window_size\": \"\", \"cut_mean_quality\": \"\"}, \"base_correction_options\": {\"correction\": \"false\"}}, \"single_paired\": {\"single_paired_selector\": \"paired_collection\", \"__current_case__\": 2, \"paired_input\": {\"__class__\": \"ConnectedValue\"}, \"adapter_trimming_options\": {\"disable_adapter_trimming\": \"false\", \"adapter_sequence1\": \"\", \"adapter_sequence2\": \"\"}, \"global_trimming_options\": {\"trim_front1\": \"\", \"trim_tail1\": \"\", \"trim_front2\": \"\", \"trim_tail2\": \"\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 643.3166809082031,
+        "bottom" : 343.98333740234375,
         "height" : 235.60000610351562,
-        "left" : -59,
-        "right" : 141,
-        "top" : 407.7166748046875,
+        "left" : 270.51666259765625,
+        "right" : 470.51666259765625,
+        "top" : 108.38333129882812,
         "width" : 200,
-        "x" : -59,
-        "y" : 407.7166748046875
+        "x" : 270.51666259765625,
+        "y" : 108.38333129882812
       },
       "name" : "fastp",
       "uuid" : "d1cce98e-4f98-493e-a1ad-f265fcee1b68",
@@ -844,14 +855,14 @@
       "tool_state" : "{\"filter_depth\": \"false\", \"gap\": \"true\", \"input_bam\": {\"__class__\": \"ConnectedValue\"}, \"min_depth\": \"50\", \"min_freq\": \"0.0\", \"min_qual\": \"20\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
       "errors" : null,
       "position" : {
-        "bottom" : 713.7166748046875,
+        "bottom" : 414.3833312988281,
         "height" : 134,
-        "left" : 1371,
-        "right" : 1571,
-        "top" : 579.7166748046875,
+        "left" : 1700.5166015625,
+        "right" : 1900.5166015625,
+        "top" : 280.3833312988281,
         "width" : 200,
-        "x" : 1371,
-        "y" : 579.7166748046875
+        "x" : 1700.5166015625,
+        "y" : 280.3833312988281
       },
       "name" : "ivar consensus",
       "uuid" : "e0c4590f-dd10-4cdb-8424-83cc0f29302f",
@@ -860,7 +871,7 @@
         "type" : "fasta"
       } ],
       "tool_shed_repository" : {
-        "changeset_revision" : "2d9926ce62be",
+        "changeset_revision" : "731182d54f78",
         "name" : "ivar_consensus",
         "owner" : "iuc",
         "tool_shed" : "toolshed.g2.bx.psu.edu"
@@ -888,22 +899,6 @@
     }
   },
   "tags" : [ ],
-  "creator" : [ {
-    "class" : "Person",
-    "identifier" : "0000-0001-6720-564X",
-    "name" : "Ziphozakhe Mashologu"
-  }, {
-    "class" : "Person",
-    "identifier" : "0000-0001-6553-5274",
-    "name" : "Peter van Heusden"
-  }, {
-    "class" : "Organization",
-    "name" : "South African National Bioinformatics Institute"
-  } ],
-  "name" : "imported: COVID 19: Amplicon-ARTIC - single pair 0.1.9",
-  "uuid" : "f33ff55a-72b2-411f-b92f-a427ce492b3c",
-  "format-version" : "0.1",
-  "version" : 5,
-  "annotation" : "Workflow for generating SARS-Cov2 consensus and variants from viral amplicon data. Us\nes iVar toolsuite.",
-  "a_galaxy_workflow" : "true"
+  "uuid" : "2b63dacc-41ff-485d-b46f-0b3a60a51d2a",
+  "version" : 1
 }

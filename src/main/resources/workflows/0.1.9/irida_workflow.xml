@@ -28,12 +28,6 @@
     <parameter name="ivar_variants-9-output_format.pass_only" defaultValue="false">
       <toolParameter toolId="49c2523d-168a-4040-8112-9037689c1ce0" parameterName="Only output variants that pass all filters"/>
     </parameter>
-    <parameter name="pangolin-14-db.source" defaultValue="default">
-      <toolParameter toolId="d29ce24e-a835-477e-8b30-d116af79d0d0" parameterName="db.source"/>
-    </parameter>
-    <parameter name="nextclade-15-adv.advanced_options" defaultValue="no">
-      <toolParameter toolId="a3d4c10a-556e-4fc1-8e41-de8230dd6ecc" parameterName="adv.advanced_options"/>
-    </parameter>
     <parameter name="ivar_consensus-16-min_qual" defaultValue="20">
       <toolParameter toolId="e0c4590f-dd10-4cdb-8424-83cc0f29302f" parameterName="Minimum quality score threshold to count base"/>
     </parameter>
@@ -42,12 +36,12 @@
     </parameter>
   </parameters>
   <outputs>
-    <output name="ivar_consensus.fasta" fileName="ivar_consensus.fasta"/>
-    <output name="multiqc_output.txt" fileName="multiqc_output.txt"/>
+    <output name="multiqc_output.html" fileName="multiqc_output.txt"/>
+    <output name="trimmed_alignment.bam" fileName="trimmed_alignment.bam"/>
     <output name="qc.csv" fileName="qc.csv"/>
     <output name="qc.json" fileName="qc.json"/>
     <output name="qc.png" fileName="qc.png"/>
-    <output name="infile" fileName="infile"/>
+    <output name="masked_genome.fasta" fileName="masked_genome.fasta"/>
     <output name="pangolin.tsv" fileName="pangolin.tsv"/>
     <output name="nextclade.tsv" fileName="nextclade.tsv"/>
   </outputs>
@@ -68,7 +62,7 @@
       <name>pangolin</name>
       <owner>iuc</owner>
       <url>https://toolshed.g2.bx.psu.edu</url>
-      <revision>3a656a4a43ed</revision>
+      <revision>debfccc4d65b</revision>
     </repository>
     <repository>
       <name>fastp</name>
@@ -92,7 +86,7 @@
       <name>bwa</name>
       <owner>devteam</owner>
       <url>https://toolshed.g2.bx.psu.edu</url>
-      <revision>3fe632431b68</revision>
+      <revision>64f11cf59c6e</revision>
     </repository>
     <repository>
       <name>qc</name>
