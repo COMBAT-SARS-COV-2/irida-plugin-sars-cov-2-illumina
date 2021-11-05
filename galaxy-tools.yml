@@ -1,0 +1,94 @@
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: true
+tools:
+- name: artic_minion
+  owner: iuc
+  revisions:
+  - a346730e5552
+  tool_panel_section_label: COMBAT-SARS-COV-2::ARTIC-MINION
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: artic_guppyplex
+  owner: sanbi-uwc
+  revisions:
+  - fce0e2325022
+  tool_panel_section_label: COMBAT-SARS-COV-2::ARTIC-MINION
+  tool_shed_url: testtoolshed.g2.bx.psu.edu
+- name: ivar_variants
+  owner: iuc
+  revisions:
+  - aea7008fe1f1
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: multiqc
+  owner: iuc
+  revisions:
+  - 75c93c70d094
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: bwa
+  owner: devteam
+  revisions:
+  - 3fe632431b68
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: qualimap_bamqc
+  owner: iuc
+  revisions:
+  - e7fd6754d093
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: pangolin
+  owner: iuc
+  revisions:
+  - 3a656a4a43ed
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: nextclade
+  owner: iuc
+  revisions:
+  - b74b9a7b3e3b
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: ivar_trim
+  owner: iuc
+  revisions:
+  - c092052ed673
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: picard
+  owner: devteam
+  revisions:
+  - 7d34178f2812
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: qc
+  owner: sanbi-uwc
+  revisions:
+  - 6bdec8c62aec
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - fb4ff3c42cd3
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: samtools_view
+  owner: iuc
+  revisions:
+  - b72793637686
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastp
+  owner: iuc
+  revisions:
+  - dbf9c561ef29
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: ivar_consensus
+  owner: iuc
+  revisions:
+  - 2d9926ce62be
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
