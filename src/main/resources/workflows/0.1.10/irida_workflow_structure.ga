@@ -628,7 +628,7 @@
         "tool_shed" : "toolshed.g2.bx.psu.edu"
       },
       "type" : "tool",
-      "tool_version" : "1.13galaxy1",
+      "tool_version" : "1.13+galaxy1",
       "annotation" : "",
       "inputs" : [ ],
       "post_job_actions" : {
@@ -638,8 +638,8 @@
           "output_name" : "outputsam"
         }
       },
-      "content_id" : "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.13galaxy1",
-      "tool_id" : "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.13galaxy1"
+      "content_id" : "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.13+galaxy1",
+      "tool_id" : "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.13+galaxy1"
     },
     "1" : {
       "workflow_outputs" : [ {
