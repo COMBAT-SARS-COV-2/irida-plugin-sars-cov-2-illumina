@@ -67,7 +67,7 @@ public class ArticIlluminaPluginUpdater implements AnalysisSampleUpdater {
 
 	private static final String QC_FILE = "qc.json";
 	private static final String NEXT_CLADE_FILE = "nextclade.tsv";
-	private static final String PANGOLIN_FILE = "pangolin.csv";
+	private static final String PANGOLIN_FILE = "pangolin.tsv";
 
 	private static final Splitter SPLITTER = Splitter.on('\t');
 	
@@ -115,10 +115,7 @@ public class ArticIlluminaPluginUpdater implements AnalysisSampleUpdater {
 
 	    int numHeaderColumns = columnNames.size();
 		int numDataColumns = values.size();
-		// numHeaderColumns can be maximum 1 more than numDataColumns
-		// because in nextclade output there can be a column called errors 
-		// that is missing in the data
-		if ((numHeaderColumns - numDataColumns) > 1) {
+		if (numHeaderColumns != numDataColumns) {
 			throw new PostProcessingException("Mismatch in number of column names [" + columnNames.size()
 					+ "] and number of fields [" + values.size() + "] in results file [" + resultsFile + "]");
 		}
