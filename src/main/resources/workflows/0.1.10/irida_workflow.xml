@@ -42,9 +42,9 @@
     <output name="multiqc_output.html" fileName="multiqc_output.txt"/>
     <output name="trimmed_alignment.bam" fileName="trimmed_alignment.bam"/>
     <output name="qc.csv" fileName="qc.csv"/>
-    <output name="qc.json" fileName="qc.json"/>
     <output name="qc.png" fileName="qc.png"/>
     <output name="masked_genome.fasta" fileName="masked_genome.fasta"/>
+    <output name="variants.tsv" fileName="variants.tsv"/>
     <output name="pangolin.tsv" fileName="pangolin.tsv"/>
     <output name="nextclade.tsv" fileName="nextclade.tsv"/>
   </outputs>

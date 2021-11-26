@@ -54,6 +54,13 @@
       "annotation" : "",
       "inputs" : [ ],
       "post_job_actions" : {
+        "RenameDatasetActionoutput1" : {
+          "action_arguments" : {
+            "newname" : "variants.tsv"
+          },
+          "action_type" : "RenameDatasetAction",
+          "output_name" : "output_variants_tabular"
+        },        
         "HideDatasetActionoutput_variants_vcf" : {
           "action_arguments" : { },
           "action_type" : "HideDatasetAction",
