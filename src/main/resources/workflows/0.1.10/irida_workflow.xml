@@ -39,7 +39,7 @@
     </parameter>
   </parameters>
   <outputs>
-    <output name="multiqc_output.html" fileName="multiqc_output.txt"/>
+    <output name="multiqc_output_page.html" fileName="multiqc_output.txt"/>
     <output name="trimmed_alignment.bam" fileName="trimmed_alignment.bam"/>
     <output name="qc.csv" fileName="qc.csv"/>
     <output name="qc.png" fileName="qc.png"/>
