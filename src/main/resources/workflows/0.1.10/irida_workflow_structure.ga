@@ -1,8 +1,8 @@
 {
   "a_galaxy_workflow" : "true",
-  "annotation" : "Workflow for generating SARS-Cov2 consensus and variants from viral amplicon data. Us\nes iVar toolsuite.",
+  "annotation" : "Workflow for generating SARS-Cov2 consensus and variants from viral amplicon data. Uses iVar toolsuite.",
   "format-version" : "0.1",
-  "name" : "imported: COVID 19: Amplicon-ARTIC - single pair 0.1.10 (imported from uploaded file)",
+  "name" : "COVID 19: Amplicon-ARTIC-Illumina",
   "steps" : {
     "9" : {
       "workflow_outputs" : [ {
