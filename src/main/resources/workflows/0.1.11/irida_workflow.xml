@@ -57,7 +57,6 @@
     </parameter>
   </parameters>
   <outputs>
-    <output name="trimmed_alignment.bam" fileName="trimmed_alignment.bam"/>
     <output name="consensus.fasta" fileName="consensus.fasta"/>
     <output name="plot_output.png" fileName="plot_output.png"/>
     <output name="aligned_reads.bam" fileName="aligned_reads.bam"/>

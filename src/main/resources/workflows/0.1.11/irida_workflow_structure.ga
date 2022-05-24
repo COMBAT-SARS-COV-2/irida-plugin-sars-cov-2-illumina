@@ -20,14 +20,14 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "bottom": 359.671875,
+                "bottom": 515.671875,
                 "height": 82.171875,
-                "left": -538,
-                "right": -338,
-                "top": 277.5,
+                "left": -427,
+                "right": -227,
+                "top": 433.5,
                 "width": 200,
-                "x": -538,
-                "y": 277.5
+                "x": -427,
+                "y": 433.5
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": null, \"collection_type\": \"list:paired\"}",
@@ -52,14 +52,14 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "bottom": 467.28125,
+                "bottom": 623.28125,
                 "height": 61.78125,
-                "left": -538,
-                "right": -338,
-                "top": 405.5,
+                "left": -427,
+                "right": -227,
+                "top": 561.5,
                 "width": 200,
-                "x": -538,
-                "y": 405.5
+                "x": -427,
+                "y": 561.5
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": null}",
@@ -83,16 +83,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Read It and Keep",
-                    "name": "reads"
-                },
-                {
-                    "description": "runtime parameter for tool Read It and Keep",
-                    "name": "ref_source"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "Read It and Keep",
             "outputs": [
@@ -102,14 +93,14 @@
                 }
             ],
             "position": {
-                "bottom": 417.453125,
+                "bottom": 573.453125,
                 "height": 143.953125,
-                "left": -260,
-                "right": -60,
-                "top": 273.5,
+                "left": -149,
+                "right": 51,
+                "top": 429.5,
                 "width": 200,
-                "x": -260,
-                "y": 273.5
+                "x": -149,
+                "y": 429.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_collection": {
@@ -125,7 +116,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"adv\": {\"min_map_length\": \"50\", \"min_map_length_pc\": \"50.0\", \"enumerate_names\": \"false\"}, \"reads\": {\"read_type\": \"paired_collection\", \"__current_case__\": 1, \"paired_reads\": {\"__class__\": \"RuntimeValue\"}}, \"ref_source\": {\"source\": \"history\", \"__current_case__\": 0, \"ref_fasta\": {\"__class__\": \"RuntimeValue\"}}, \"sequencing_tech\": \"illumina\", \"trim_reference\": \"true\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"adv\": {\"min_map_length\": \"50\", \"min_map_length_pc\": \"50.0\", \"enumerate_names\": \"false\"}, \"reads\": {\"read_type\": \"paired_collection\", \"__current_case__\": 1, \"paired_reads\": {\"__class__\": \"ConnectedValue\"}}, \"ref_source\": {\"source\": \"history\", \"__current_case__\": 0, \"ref_fasta\": {\"__class__\": \"ConnectedValue\"}}, \"sequencing_tech\": \"illumina\", \"trim_reference\": \"true\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.2.2+galaxy0",
             "type": "tool",
             "uuid": "019e1063-1a90-40fd-9912-f7a4f16e7070",
@@ -142,12 +133,7 @@
                     "output_name": "output_collection"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool fastp",
-                    "name": "single_paired"
-                }
-            ],
+            "inputs": [],
             "label": "fastp: Trimmed Illumina Reads",
             "name": "fastp",
             "outputs": [
@@ -165,14 +151,14 @@
                 }
             ],
             "position": {
-                "bottom": 326.015625,
+                "bottom": 482.015625,
                 "height": 235.515625,
-                "left": 18,
-                "right": 218,
-                "top": 90.5,
+                "left": 129,
+                "right": 329,
+                "top": 246.5,
                 "width": 200,
-                "x": 18,
-                "y": 90.5
+                "x": 129,
+                "y": 246.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_paired_coll": {
@@ -198,7 +184,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"filter_options\": {\"quality_filtering_options\": {\"disable_quality_filtering\": \"false\", \"qualified_quality_phred\": null, \"unqualified_percent_limit\": null, \"n_base_limit\": null}, \"length_filtering_options\": {\"disable_length_filtering\": \"false\", \"length_required\": null, \"length_limit\": null}, \"low_complexity_filter\": {\"enable_low_complexity_filter\": \"false\", \"complexity_threshold\": null}}, \"output_options\": {\"report_html\": \"true\", \"report_json\": \"true\"}, \"overrepresented_sequence_analysis\": {\"overrepresentation_analysis\": \"false\", \"overrepresentation_sampling\": null}, \"read_mod_options\": {\"polyg_tail_trimming\": {\"trimming_select\": \"\", \"__current_case__\": 1, \"poly_g_min_len\": null}, \"polyx_tail_trimming\": {\"polyx_trimming_select\": \"\", \"__current_case__\": 1}, \"umi_processing\": {\"umi\": \"false\", \"umi_loc\": \"\", \"umi_len\": null, \"umi_prefix\": \"\"}, \"cutting_by_quality_options\": {\"cut_by_quality5\": \"false\", \"cut_by_quality3\": \"false\", \"cut_window_size\": null, \"cut_mean_quality\": null}, \"base_correction_options\": {\"correction\": \"false\"}}, \"single_paired\": {\"single_paired_selector\": \"paired_collection\", \"__current_case__\": 2, \"paired_input\": {\"__class__\": \"RuntimeValue\"}, \"adapter_trimming_options\": {\"disable_adapter_trimming\": \"false\", \"adapter_sequence1\": \"\", \"adapter_sequence2\": \"\"}, \"global_trimming_options\": {\"trim_front1\": null, \"trim_tail1\": null, \"trim_front2\": null, \"trim_tail2\": null}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"filter_options\": {\"quality_filtering_options\": {\"disable_quality_filtering\": \"false\", \"qualified_quality_phred\": null, \"unqualified_percent_limit\": null, \"n_base_limit\": null}, \"length_filtering_options\": {\"disable_length_filtering\": \"false\", \"length_required\": null, \"length_limit\": null}, \"low_complexity_filter\": {\"enable_low_complexity_filter\": \"false\", \"complexity_threshold\": null}}, \"output_options\": {\"report_html\": \"true\", \"report_json\": \"true\"}, \"overrepresented_sequence_analysis\": {\"overrepresentation_analysis\": \"false\", \"overrepresentation_sampling\": null}, \"read_mod_options\": {\"polyg_tail_trimming\": {\"trimming_select\": \"\", \"__current_case__\": 1, \"poly_g_min_len\": null}, \"polyx_tail_trimming\": {\"polyx_trimming_select\": \"\", \"__current_case__\": 1}, \"umi_processing\": {\"umi\": \"false\", \"umi_loc\": \"\", \"umi_len\": null, \"umi_prefix\": \"\"}, \"cutting_by_quality_options\": {\"cut_by_quality5\": \"false\", \"cut_by_quality3\": \"false\", \"cut_window_size\": null, \"cut_mean_quality\": null}, \"base_correction_options\": {\"correction\": \"false\"}}, \"single_paired\": {\"single_paired_selector\": \"paired_collection\", \"__current_case__\": 2, \"paired_input\": {\"__class__\": \"ConnectedValue\"}, \"adapter_trimming_options\": {\"disable_adapter_trimming\": \"false\", \"adapter_sequence1\": \"\", \"adapter_sequence2\": \"\"}, \"global_trimming_options\": {\"trim_front1\": null, \"trim_tail1\": null, \"trim_front2\": null, \"trim_tail2\": null}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.23.2+galaxy0",
             "type": "tool",
             "uuid": "d1cce98e-4f98-493e-a1ad-f265fcee1b68",
@@ -229,14 +215,14 @@
                 }
             ],
             "position": {
-                "bottom": 417.40625,
+                "bottom": 573.40625,
                 "height": 245.90625,
-                "left": 296,
-                "right": 496,
-                "top": 171.5,
+                "left": 407,
+                "right": 607,
+                "top": 327.5,
                 "width": 200,
-                "x": 296,
-                "y": 171.5
+                "x": 407,
+                "y": 327.5
             },
             "post_job_actions": {
                 "HideDatasetActionbam_output": {
@@ -283,14 +269,14 @@
                 }
             ],
             "position": {
-                "bottom": 404.015625,
+                "bottom": 560.015625,
                 "height": 225.515625,
-                "left": 574,
-                "right": 774,
-                "top": 178.5,
+                "left": 685,
+                "right": 885,
+                "top": 334.5,
                 "width": 200,
-                "x": 574,
-                "y": 178.5
+                "x": 685,
+                "y": 334.5
             },
             "post_job_actions": {
                 "HideDatasetActionmetrics_file": {
@@ -338,14 +324,14 @@
                 }
             ],
             "position": {
-                "bottom": 417.234375,
+                "bottom": 573.234375,
                 "height": 184.734375,
-                "left": 852,
-                "right": 1052,
-                "top": 232.5,
+                "left": 963,
+                "right": 1163,
+                "top": 388.5,
                 "width": 200,
-                "x": 852,
-                "y": 232.5
+                "x": 963,
+                "y": 388.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutputsam": {
@@ -392,14 +378,14 @@
                 }
             ],
             "position": {
-                "bottom": 245.625,
+                "bottom": 401.625,
                 "height": 205.125,
-                "left": 1130,
-                "right": 1330,
-                "top": 40.5,
+                "left": 1241,
+                "right": 1441,
+                "top": 196.5,
                 "width": 200,
-                "x": 1130,
-                "y": 40.5
+                "x": 1241,
+                "y": 196.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_html": {
@@ -423,7 +409,7 @@
                 {
                     "label": "Raw data for QualiMap BamQC on input dataset(s)",
                     "output_name": "raw_data",
-                    "uuid": "d4f1711c-30a5-4b17-b78a-29a56f282876"
+                    "uuid": "b2a98922-4d92-4152-ba46-8660fe74b5e4"
                 }
             ]
         },
@@ -448,21 +434,16 @@
                 }
             ],
             "position": {
-                "bottom": 417.453125,
+                "bottom": 573.453125,
                 "height": 133.953125,
-                "left": 1130,
-                "right": 1330,
-                "top": 283.5,
+                "left": 1241,
+                "right": 1441,
+                "top": 439.5,
                 "width": 200,
-                "x": 1130,
-                "y": 283.5
+                "x": 1241,
+                "y": 439.5
             },
             "post_job_actions": {
-                "HideDatasetActionoutput_bam": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output_bam"
-                },
                 "RenameDatasetActionoutput_bam": {
                     "action_arguments": {
                         "newname": "aligned_reads.bam"
@@ -482,7 +463,13 @@
             "tool_version": "1.3.1+galaxy2",
             "type": "tool",
             "uuid": "3afb1ed0-ee37-4cce-905a-fbcb987f3c26",
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output_bam",
+                    "uuid": "cfff224c-521d-4091-b9f1-d8d29e4157a1"
+                }
+            ]
         },
         "9": {
             "annotation": "",
@@ -513,14 +500,14 @@
                 }
             ],
             "position": {
-                "bottom": 118.625,
+                "bottom": 274.625,
                 "height": 215.125,
-                "left": 1418,
-                "right": 1618,
-                "top": -96.5,
+                "left": 1529,
+                "right": 1729,
+                "top": 59.5,
                 "width": 200,
-                "x": 1418,
-                "y": -96.5
+                "x": 1529,
+                "y": 59.5
             },
             "post_job_actions": {
                 "ChangeDatatypeActionhtml_report": {
@@ -550,7 +537,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"comment\": \"\", \"export\": \"false\", \"flat\": \"false\", \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"qualimap\", \"__current_case__\": 20, \"input\": {\"__class__\": \"RuntimeValue\"}}}, {\"__index__\": 1, \"software_cond\": {\"software\": \"fastp\", \"__current_case__\": 7, \"input\": {\"__class__\": \"RuntimeValue\"}}}], \"saveLog\": \"false\", \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"comment\": \"\", \"export\": \"false\", \"flat\": \"false\", \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"qualimap\", \"__current_case__\": 20, \"input\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"software_cond\": {\"software\": \"fastp\", \"__current_case__\": 7, \"input\": {\"__class__\": \"ConnectedValue\"}}}], \"saveLog\": \"false\", \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.9+galaxy1",
             "type": "tool",
             "uuid": "7bef6cf2-e18f-40c7-93d2-e6f277781309",
@@ -558,7 +545,7 @@
                 {
                     "label": null,
                     "output_name": "html_report",
-                    "uuid": "41d4a207-a184-4c99-8df7-1b3eda927403"
+                    "uuid": "43854060-8d2f-4035-961b-4838a85d72f3"
                 }
             ]
         },
@@ -583,14 +570,14 @@
                 }
             ],
             "position": {
-                "bottom": 290.453125,
+                "bottom": 446.453125,
                 "height": 133.953125,
-                "left": 1418,
-                "right": 1618,
-                "top": 156.5,
+                "left": 1529,
+                "right": 1729,
+                "top": 312.5,
                 "width": 200,
-                "x": 1418,
-                "y": 156.5
+                "x": 1529,
+                "y": 312.5
             },
             "post_job_actions": {
                 "HideDatasetActionconsensus": {
@@ -634,16 +621,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool ivar variants",
-                    "name": "input_bam"
-                },
-                {
-                    "description": "runtime parameter for tool ivar variants",
-                    "name": "ref"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "ivar variants",
             "outputs": [
@@ -657,14 +635,14 @@
                 }
             ],
             "position": {
-                "bottom": 543.625,
+                "bottom": 699.625,
                 "height": 215.125,
-                "left": 1418,
-                "right": 1618,
-                "top": 328.5,
+                "left": 1529,
+                "right": 1729,
+                "top": 484.5,
                 "width": 200,
-                "x": 1418,
-                "y": 328.5
+                "x": 1529,
+                "y": 484.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_variants_vcf": {
@@ -687,7 +665,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"input_bam\": {\"__class__\": \"RuntimeValue\"}, \"min_freq\": \"0.8\", \"min_qual\": \"20\", \"output_format\": {\"choice\": \"tabular_and_vcf\", \"__current_case__\": 1, \"pass_only\": \"false\"}, \"ref\": {\"__class__\": \"RuntimeValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"input_bam\": {\"__class__\": \"ConnectedValue\"}, \"min_freq\": \"0.8\", \"min_qual\": \"20\", \"output_format\": {\"choice\": \"tabular_and_vcf\", \"__current_case__\": 1, \"pass_only\": \"false\"}, \"ref\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.3.1+galaxy2",
             "type": "tool",
             "uuid": "49c2523d-168a-4040-8112-9037689c1ce0",
@@ -695,7 +673,7 @@
                 {
                     "label": null,
                     "output_name": "output_variants_tabular",
-                    "uuid": "8ed11c4a-f2d5-4fd7-9dda-26d360e041f2"
+                    "uuid": "35b26abe-c7e6-4293-8b7c-aad4dbd0953e"
                 }
             ]
         },
@@ -714,16 +692,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool BAM Coverage Plotter",
-                    "name": "alignment_file"
-                },
-                {
-                    "description": "runtime parameter for tool BAM Coverage Plotter",
-                    "name": "reference"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "BAM Coverage Plotter",
             "outputs": [
@@ -733,14 +702,14 @@
                 }
             ],
             "position": {
-                "bottom": 725.453125,
+                "bottom": 881.453125,
                 "height": 143.953125,
-                "left": 1418,
-                "right": 1618,
-                "top": 581.5,
+                "left": 1529,
+                "right": 1729,
+                "top": 737.5,
                 "width": 200,
-                "x": 1418,
-                "y": 581.5
+                "x": 1529,
+                "y": 737.5
             },
             "post_job_actions": {
                 "RenameDatasetActionplot_output": {
@@ -758,7 +727,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"adv\": {\"disable_paired_overlap\": \"false\", \"include_contig_regex\": \"\", \"min_mapq\": \"1\", \"max_depth\": \"-1\", \"clip\": \"false\", \"min_contig_length\": \"0\", \"percentile\": \"median\", \"points\": \"false\", \"skip_contig_regex\": \"\", \"sample_filter\": {\"filter_by_sample\": \"false\", \"__current_case__\": 1}}, \"alignment_file\": {\"__class__\": \"RuntimeValue\"}, \"dimension\": \"1000x500\", \"format\": \"PNG\", \"reference\": {\"source\": \"history\", \"__current_case__\": 1, \"hist_genome\": {\"__class__\": \"RuntimeValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"adv\": {\"disable_paired_overlap\": \"false\", \"include_contig_regex\": \"\", \"min_mapq\": \"1\", \"max_depth\": \"-1\", \"clip\": \"false\", \"min_contig_length\": \"0\", \"percentile\": \"median\", \"points\": \"false\", \"skip_contig_regex\": \"\", \"sample_filter\": {\"filter_by_sample\": \"false\", \"__current_case__\": 1}}, \"alignment_file\": {\"__class__\": \"ConnectedValue\"}, \"dimension\": \"1000x500\", \"format\": \"PNG\", \"reference\": {\"source\": \"history\", \"__current_case__\": 1, \"hist_genome\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "20201223+galaxy0",
             "type": "tool",
             "uuid": "5d3bef0d-fa3f-4733-a077-59f31dce3223",
@@ -766,7 +735,7 @@
                 {
                     "label": null,
                     "output_name": "plot_output",
-                    "uuid": "a50f8b9a-1527-4547-9535-b66224180a4b"
+                    "uuid": "a5f379fe-e871-4b97-9b81-39f53e79b2ba"
                 }
             ]
         },
@@ -791,14 +760,14 @@
                 }
             ],
             "position": {
-                "bottom": 269.671875,
+                "bottom": 425.671875,
                 "height": 93.171875,
-                "left": 1696,
-                "right": 1896,
-                "top": 176.5,
+                "left": 1807,
+                "right": 2007,
+                "top": 332.5,
                 "width": 200,
-                "x": 1696,
-                "y": 176.5
+                "x": 1807,
+                "y": 332.5
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
@@ -824,7 +793,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "ab152353-32bc-48fa-b98b-7f7cfb2a9a19"
+                    "uuid": "8069435d-4e67-453b-a0dd-492fc543fd57"
                 }
             ]
         },
@@ -840,10 +809,6 @@
                 }
             },
             "inputs": [
-                {
-                    "description": "runtime parameter for tool SnpEff eff:",
-                    "name": "input"
-                },
                 {
                     "description": "runtime parameter for tool SnpEff eff:",
                     "name": "intervals"
@@ -866,19 +831,19 @@
                 }
             ],
             "position": {
-                "bottom": 680.796875,
+                "bottom": 836.796875,
                 "height": 286.296875,
-                "left": 1696,
-                "right": 1896,
-                "top": 394.5,
+                "left": 1807,
+                "right": 2007,
+                "top": 550.5,
                 "width": 200,
-                "x": 1696,
-                "y": 394.5
+                "x": 1807,
+                "y": 550.5
             },
             "post_job_actions": {
                 "RenameDatasetActionsnpeff_output": {
                     "action_arguments": {
-                        "newname": "variants.vcf"
+                        "newname": "snpeff_variants.vcf"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "snpeff_output"
@@ -891,7 +856,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"annotations\": null, \"chr\": \"\", \"csvStats\": \"false\", \"filter\": {\"specificEffects\": \"no\", \"__current_case__\": 0}, \"filterOut\": null, \"generate_stats\": \"true\", \"genome_version\": \"NC_045512.2\", \"input\": {\"__class__\": \"RuntimeValue\"}, \"inputFormat\": \"vcf\", \"intervals\": {\"__class__\": \"RuntimeValue\"}, \"noLog\": \"true\", \"offset\": \"default\", \"outputConditional\": {\"outputFormat\": \"vcf\", \"__current_case__\": 0}, \"transcripts\": {\"__class__\": \"RuntimeValue\"}, \"udLength\": \"0\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"annotations\": null, \"chr\": \"\", \"csvStats\": \"false\", \"filter\": {\"specificEffects\": \"no\", \"__current_case__\": 0}, \"filterOut\": null, \"generate_stats\": \"true\", \"genome_version\": \"NC_045512.2\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"inputFormat\": \"vcf\", \"intervals\": {\"__class__\": \"RuntimeValue\"}, \"noLog\": \"true\", \"offset\": \"default\", \"outputConditional\": {\"outputFormat\": \"vcf\", \"__current_case__\": 0}, \"transcripts\": {\"__class__\": \"RuntimeValue\"}, \"udLength\": \"0\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "4.5covid19",
             "type": "tool",
             "uuid": "242126ac-4cc5-441d-848a-8ca93bdcf3a1",
@@ -899,12 +864,12 @@
                 {
                     "label": null,
                     "output_name": "snpeff_output",
-                    "uuid": "10a4edc1-3298-4f5a-b35a-dde5c3786b13"
+                    "uuid": "fd2a3ca6-d732-4e68-8aee-c483fca4876a"
                 },
                 {
                     "label": "SnpEff eff: on input dataset(s) - HTML stats",
                     "output_name": "statsFile",
-                    "uuid": "21e8cabf-3354-4b20-9155-493461a943ca"
+                    "uuid": "82f15ebd-d85b-433a-b143-168f273c0b39"
                 }
             ]
         },
@@ -929,14 +894,14 @@
                 }
             ],
             "position": {
-                "bottom": 302.0625,
+                "bottom": 458.0625,
                 "height": 113.5625,
-                "left": 1974,
-                "right": 2174,
-                "top": 188.5,
+                "left": 2085,
+                "right": 2285,
+                "top": 344.5,
                 "width": 200,
-                "x": 1974,
-                "y": 188.5
+                "x": 2085,
+                "y": 344.5
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput1": {
@@ -962,7 +927,7 @@
                 {
                     "label": null,
                     "output_name": "output1",
-                    "uuid": "b35e8cc0-d197-47b1-9222-510749f1a978"
+                    "uuid": "6756c494-bb03-42c4-8ba0-e6d457e5f52d"
                 }
             ]
         },
@@ -987,14 +952,14 @@
                 }
             ],
             "position": {
-                "bottom": 494.84375,
+                "bottom": 650.84375,
                 "height": 154.34375,
-                "left": 1974,
-                "right": 2174,
-                "top": 340.5,
+                "left": 2085,
+                "right": 2285,
+                "top": 496.5,
                 "width": 200,
-                "x": 1974,
-                "y": 340.5
+                "x": 2085,
+                "y": 496.5
             },
             "post_job_actions": {
                 "RenameDatasetActionreport_tsv": {
@@ -1020,12 +985,12 @@
                 {
                     "label": null,
                     "output_name": "report_tsv",
-                    "uuid": "a8453f1d-2453-4adb-ba41-f33df89237bd"
+                    "uuid": "777b36b1-f073-4026-b5ae-675081c087ab"
                 }
             ]
         }
     },
     "tags": [],
-    "uuid": "db2142be-3fa7-413c-84ad-4f094d4e9b35",
-    "version": 2
+    "uuid": "5c0dc5a9-6c95-4cf8-aa37-bdc5969e8b15",
+    "version": 3
 }
