@@ -74,7 +74,7 @@ public class ArticIlluminaPlugin extends Plugin {
 		 */
 		@Override
 		public UUID getDefaultWorkflowUUID() {
-			return UUID.fromString("fe8bfdc1-bf00-49e0-bfbd-7c0f9f0c927a");
+			return UUID.fromString("fe8bfdc1-bf00-49e0-bfbd-7c0f9f0c927b");
 		}
 
 		/*******************************************************************************
@@ -119,11 +119,12 @@ public class ArticIlluminaPlugin extends Plugin {
 		 * 
 		 * @return An {@link Optional} {@link AnalysisSampleUpdater} used to update
 		 *         metadata from the pipeline results.
-		 */		
+		 */
 		@Override
 		public Optional<AnalysisSampleUpdater> getUpdater(MetadataTemplateService metadataTemplateService,
 				SampleService sampleService, IridaWorkflowsService iridaWorkflowsService) throws IridaPluginException {
-			return Optional.of(new ArticIlluminaPluginUpdater(metadataTemplateService, sampleService, iridaWorkflowsService));
+			return Optional
+					.of(new ArticIlluminaPluginUpdater(metadataTemplateService, sampleService, iridaWorkflowsService));
 		}
 	}
 }
