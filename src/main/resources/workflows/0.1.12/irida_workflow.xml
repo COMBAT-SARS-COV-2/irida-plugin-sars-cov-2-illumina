@@ -52,7 +52,7 @@
     <parameter name="jvarkit_wgscoverageplotter-12-adv.min_mapq" defaultValue="1">
       <toolParameter toolId="5d3bef0d-fa3f-4733-a077-59f31dce3223" parameterName="adv.min_mapq" label="Minimum mapping quality" type="integer"/>
     </parameter>
-    <parameter name="jvarkit_wgscoverageplotter-12-adv.percentile" required="true">
+    <!-- <parameter name="jvarkit_wgscoverageplotter-12-adv.percentile" required="true">
       <choices>
         <choice name="median" value="median"/>
         <choice name="average" value="average"/>
@@ -60,7 +60,7 @@
         <choice name="max" value="max"/>
       </choices>      
       <toolParameter toolId="5d3bef0d-fa3f-4733-a077-59f31dce3223" parameterName="adv.percentile" label="How to bin the coverage under one pixel" type="select"/>
-    </parameter>
+    </parameter> -->
     <parameter name="jvarkit_wgscoverageplotter-12-adv.max_depth" defaultValue="-1">
       <toolParameter toolId="5d3bef0d-fa3f-4733-a077-59f31dce3223" parameterName="adv.max_depth" label="y-axis (depth) limit of the plot" type="integer"/>
     </parameter>
