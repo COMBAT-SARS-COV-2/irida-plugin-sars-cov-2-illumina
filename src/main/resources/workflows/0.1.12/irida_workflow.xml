@@ -19,7 +19,7 @@
       </dynamicSource>      
       <toolParameter toolId="3afb1ed0-ee37-4cce-905a-fbcb987f3c26" parameterName="Primer scheme name"/>
     </parameter>
-    <parameter name="ivar_trim-7-amplicons.filter_by" defaultValue="true">
+    <parameter name="ivar_trim-7-amplicons.filter_by" required="true">
       <choices>
         <choice name="true" value="true"/>
         <choice name="false" value="false"/>
@@ -32,7 +32,7 @@
     <parameter name="ivar_variants-9-min_freq" defaultValue="0.03">
       <toolParameter toolId="49c2523d-168a-4040-8112-9037689c1ce0" parameterName="Variants: Minimum frequency threshold"/>
     </parameter>
-    <parameter name="ivar_variants-9-output_format.pass_only" defaultValue="false">
+    <parameter name="ivar_variants-9-output_format.pass_only" required="true">
       <choices>
         <choice name="true" value="true"/>
         <choice name="false" value="false"/>
@@ -52,7 +52,7 @@
     <parameter name="jvarkit_wgscoverageplotter-12-adv.min_mapq" defaultValue="1">
       <toolParameter toolId="5d3bef0d-fa3f-4733-a077-59f31dce3223" parameterName="adv.min_mapq" label="Minimum mapping quality" type="integer"/>
     </parameter>
-    <parameter name="jvarkit_wgscoverageplotter-12-adv.percentile" defaultValue="median">
+    <parameter name="jvarkit_wgscoverageplotter-12-adv.percentile" required="true">
       <choices>
         <choice name="median" value="median"/>
         <choice name="average" value="average"/>
@@ -64,14 +64,14 @@
     <parameter name="jvarkit_wgscoverageplotter-12-adv.max_depth" defaultValue="-1">
       <toolParameter toolId="5d3bef0d-fa3f-4733-a077-59f31dce3223" parameterName="adv.max_depth" label="y-axis (depth) limit of the plot" type="integer"/>
     </parameter>
-    <parameter name="jvarkit_wgscoverageplotter-12-adv.points" defaultValue="false">
+    <parameter name="jvarkit_wgscoverageplotter-12-adv.points" required="true">
       <choices>
         <choice name="false" value="false"/>
         <choice name="true" value="true"/>
       </choices>      
       <toolParameter toolId="5d3bef0d-fa3f-4733-a077-59f31dce3223" parameterName="adv.points" label="Plot coverage using points instead of areas" type="boolean"/>
     </parameter>
-    <parameter name="jvarkit_wgscoverageplotter-12-adv.clip" defaultValue="false">
+    <parameter name="jvarkit_wgscoverageplotter-12-adv.clip" required="true">
       <choices>
         <choice name="false" value="false"/>
         <choice name="true" value="true"/>
