@@ -13,7 +13,7 @@
     <parameter name="samtools_view-6-mode.filter_config.quality" defaultValue="20">
       <toolParameter toolId="622f67e3-3756-412d-b92f-80826e5ae9cc" parameterName="Mapping: Minimum mapping quality"/>
     </parameter>
-    <parameter name="ivar_trim-7-primer.cached_bed" defaultValue="SARS-CoV-2-ARTICv3" required="true">
+    <parameter name="ivar_trim-7-primer.cached_bed" required="true">
       <dynamicSource>
         <galaxyToolDataTable name="primer_scheme_bedfiles" displayColumn="name" parameterColumn="value" />
       </dynamicSource>      
