@@ -163,11 +163,11 @@ public class ArticIlluminaPluginUpdater implements AnalysisSampleUpdater {
 		results.put("nextcladeQC",
 				new PipelineProvidedMetadataEntry(dataMap.get("qc.overallStatus"), "Overall Nextclade QC", analysis));
 		results.put("aaDeletions",
-				PipelineProvidedMetadataEntry(dataMap.get("aaDeletions"), "Amino Acids Deletions", analysis));
+				new PipelineProvidedMetadataEntry(dataMap.get("aaDeletions"), "Amino Acids Deletions", analysis));
 		results.put("deletions",
-				PipelineProvidedMetadataEntry(dataMap.get("deletions"), "Nucleotide Deletions", analysis));
+				new PipelineProvidedMetadataEntry(dataMap.get("deletions"), "Nucleotide Deletions", analysis));
 		results.put("aaInsertions",
-				PipelineProvidedMetadataEntry(dataMap.get("deletions"), "Nucleotide Deletions", analysis));
+				new PipelineProvidedMetadataEntry(dataMap.get("deletions"), "Nucleotide Deletions", analysis));
 
 		line = reader.readLine();
 
